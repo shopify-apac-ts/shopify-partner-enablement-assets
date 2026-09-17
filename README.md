@@ -28,28 +28,6 @@ folder selected in the repository's Pages settings.
 - [English website](https://shopify-apac-ts.github.io/shopify-partner-enablement-assets/)
 - [Japanese website](https://shopify-apac-ts.github.io/shopify-partner-enablement-assets/ja/)
 
-## Git workflow
+## Disclaimer
 
-This repository uses only the `ts` remote:
-`https://github.com/shopify-apac-ts/shopify-partner-enablement-assets`.
-
-Use `junichiokamuraSP <junichi.okamura@shopify.com>` as both the author and
-committer for this repository. This overrides the personal commit identity used
-in other repositories. Configure it locally after cloning:
-
-```sh
-git config --local user.name junichiokamuraSP
-git config --local user.email junichi.okamura@shopify.com
-```
-
-The local `main` branch tracks `ts/main`. Push changes with:
-
-```sh
-git push ts main
-```
-
-Do not add or push to a personal `origin` remote for this repository.
-
-Unless instructed otherwise, file changes should be committed, pushed to
-`ts/main`, and deployed as part of the same task. Pushing changes to `main` triggers
-publication from `docs/`; verify the deployment after pushing.
+This site is not official Shopify documentation. The maintainers do not accept responsibility for the accuracy, completeness, or consequences of using this content. Use it at your own discretion as supplemental material for understanding Shopify concepts and workflows. Content may change without notice.

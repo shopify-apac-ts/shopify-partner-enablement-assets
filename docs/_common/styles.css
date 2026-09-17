@@ -79,6 +79,22 @@ h1 {
   letter-spacing: 0;
 }
 
+.disclaimer {
+  max-width: 44rem;
+  margin-top: 2rem;
+  border-left: 3px solid #d6dfd3;
+  padding-left: 1.25rem;
+}
+
+.disclaimer h2 {
+  font-size: 1rem;
+  margin: 0 0 0.5rem;
+}
+
+.disclaimer p {
+  margin: 0;
+}
+
 .introduction {
   max-width: 44rem;
   font-size: 1.125rem;
