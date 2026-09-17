@@ -28,6 +28,15 @@ settings.
 This repository uses only the `ts` remote:
 `https://github.com/shopify-apac-ts/shopify-partner-enablement-assets`.
 
+Use `junichiokamuraSP <junichi.okamura@shopify.com>` as both the author and
+committer for this repository. This overrides the personal commit identity used
+in other repositories. Configure it locally after cloning:
+
+```sh
+git config --local user.name junichiokamuraSP
+git config --local user.email junichi.okamura@shopify.com
+```
+
 The local `main` branch tracks `ts/main`. Push changes with:
 
 ```sh
