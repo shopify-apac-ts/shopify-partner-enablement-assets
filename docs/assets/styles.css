@@ -1,0 +1,93 @@
+:root {
+  color-scheme: light;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #17351e;
+  background: #f7f9f5;
+  line-height: 1.6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.site-header,
+main {
+  width: min(100% - 3rem, 68rem);
+  margin-inline: auto;
+}
+
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  padding-block: 1.5rem;
+  border-bottom: 1px solid #d6dfd3;
+}
+
+.site-name {
+  font-weight: 650;
+}
+
+nav {
+  display: flex;
+  gap: 1rem;
+}
+
+a {
+  color: inherit;
+  text-underline-offset: 0.25em;
+}
+
+a[aria-current="page"] {
+  font-weight: 700;
+}
+
+a:focus-visible {
+  outline: 2px solid #0b4715;
+  outline-offset: 5px;
+}
+
+main {
+  padding-block: clamp(3rem, 9vw, 7rem);
+}
+
+.eyebrow {
+  color: #0b4715;
+  font-weight: 650;
+  margin: 0 0 1.5rem;
+}
+
+h1 {
+  max-width: 18ch;
+  font-size: clamp(2.25rem, 5.5vw, 4.5rem);
+  font-weight: 650;
+  line-height: 1.15;
+  letter-spacing: -0.035em;
+  overflow-wrap: anywhere;
+  margin: 0;
+}
+
+:lang(ja) h1 {
+  max-width: 16em;
+  line-height: 1.4;
+  letter-spacing: 0;
+}
+
+.introduction {
+  max-width: 44rem;
+  font-size: 1.125rem;
+  margin-block: 2rem 0;
+}
+
+.status {
+  max-width: 44rem;
+  border-top: 1px solid #d6dfd3;
+  padding-top: 1.5rem;
+  margin-top: 3rem;
+}
