@@ -13,7 +13,10 @@ The static website lives in `docs/` and is published with GitHub Pages:
 - `docs/index.html`: English homepage at the site root.
 - `docs/ja/index.html`: Japanese version of the same content at `/ja/`, relative
   to the site root.
-- `docs/assets/styles.css`: Shared styles for both languages.
+- `docs/_common/styles.css`: Shared styles for both languages.
+
+Store shared website files in `docs/_common/`. Reserve `docs/assets/` for reusable
+educational resources.
 
 Keep the English and Japanese pages equivalent in content. English is the
 default language. Use relative links so both versions work under the repository's
