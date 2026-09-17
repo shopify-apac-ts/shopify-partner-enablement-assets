@@ -10,17 +10,24 @@ ability to propose Shopify implementation solutions.
 
 The static website lives in `docs/` and is published with GitHub Pages:
 
-- `docs/index.html`: English homepage at the site root.
-- `docs/ja/index.html`: Japanese version of the same content at `/ja/`, relative
-  to the site root.
+- `docs/index.html` and `docs/ja/index.html`: English and Japanese site directories.
+- `docs/seminars/index.html` and `docs/seminars/ja/index.html`: Seminar directories.
+- `docs/seminars/<seminar>/index.html` and
+  `docs/seminars/<seminar>/ja/index.html`: Seminar summaries and resource links.
+- `docs/seminars/<seminar>/`: Shared seminar files, including slide PDFs and
+  assessment worksheets. Both language versions link to the same files.
+- `docs/assets/index.html` and `docs/assets/ja/index.html`: Reusable resource
+  directories for materials that are not tied to a specific event.
 - `docs/_common/styles.css`: Shared styles for both languages.
 
 Store shared website files in `docs/_common/`. Reserve `docs/assets/` for reusable
 educational resources.
 
-Keep the English and Japanese pages equivalent in content. English is the
-default language. Use relative links so both versions work under the repository's
-GitHub Pages path. The `docs/.nojekyll` file enables plain static-file publishing.
+Keep the English and Japanese HTML pages equivalent in content. English is the
+default language; Japanese pages use a `ja/index.html` subdirectory. Resource
+files do not need separate language copies. Use relative links so all pages work
+under the repository's GitHub Pages path. The `docs/.nojekyll` file enables plain
+static-file publishing, including the `_common` directory.
 
 GitHub Pages uses **Deploy from a branch**, with the `main` branch and the `/docs`
 folder selected in the repository's Pages settings.

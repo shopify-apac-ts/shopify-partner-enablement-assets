@@ -15,7 +15,8 @@ body {
 }
 
 .site-header,
-main {
+main,
+.site-footer {
   width: min(100% - 3rem, 68rem);
   margin-inline: auto;
 }
@@ -37,6 +38,7 @@ main {
 nav {
   display: flex;
   gap: 1rem;
+  flex-wrap: wrap;
 }
 
 a {
@@ -101,9 +103,121 @@ h1 {
   margin-block: 2rem 0;
 }
 
-.status {
-  max-width: 44rem;
-  border-top: 1px solid #d6dfd3;
-  padding-top: 1.5rem;
+.page-title {
+  max-width: 26ch;
+  font-size: clamp(2rem, 4.5vw, 3.25rem);
+}
+
+.breadcrumbs {
+  margin-bottom: 2rem;
+}
+
+.metadata {
+  color: #44614a;
+  font-size: 0.95rem;
+  margin: 0 0 0.75rem;
+}
+
+.event-time {
+  margin-top: 1.5rem;
+}
+
+.content-section {
   margin-top: 3rem;
+}
+
+.content-section > h2 {
+  font-size: 1.5rem;
+  line-height: 1.4;
+  margin: 0 0 1rem;
+}
+
+.content-section > p {
+  max-width: 44rem;
+}
+
+.directory-grid,
+.resource-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr));
+  gap: 1.5rem;
+}
+
+.entry-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.directory-card {
+  border: 1px solid #d6dfd3;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  overflow-wrap: anywhere;
+  min-width: 0;
+}
+
+.directory-card h3 {
+  font-size: 1.25rem;
+  line-height: 1.4;
+  margin: 0 0 1rem;
+}
+
+.directory-card > p:last-child {
+  margin-bottom: 0;
+}
+
+.resource-links {
+  padding-left: 1.25rem;
+  margin-bottom: 0;
+}
+
+.resource-links li + li {
+  margin-top: 0.5rem;
+}
+
+.action-link {
+  display: inline-block;
+  font-weight: 650;
+  margin-top: 0.5rem;
+}
+
+.event-details {
+  max-width: 44rem;
+  margin-block: 2rem 0;
+}
+
+.event-details > div + div {
+  margin-top: 1rem;
+}
+
+.event-details dt {
+  font-weight: 650;
+}
+
+.event-details dd {
+  margin: 0.25rem 0 0;
+}
+
+.pdf-preview {
+  display: block;
+  width: 100%;
+  height: clamp(28rem, 75vh, 56rem);
+  border: 1px solid #d6dfd3;
+  border-radius: 0.5rem;
+  background: white;
+}
+
+.empty-state {
+  padding: 1.5rem;
+  border: 1px solid #d6dfd3;
+  border-radius: 0.5rem;
+}
+
+.site-footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  border-top: 1px solid #d6dfd3;
+  padding-block: 1.5rem;
 }
