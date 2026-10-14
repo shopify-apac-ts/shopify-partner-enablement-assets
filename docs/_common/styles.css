@@ -149,6 +149,10 @@ h1 {
   list-style: none;
 }
 
+.entry-list > li + li {
+  margin-top: 1.5rem;
+}
+
 .directory-card {
   border: 1px solid #d6dfd3;
   border-radius: 0.5rem;
@@ -174,6 +178,28 @@ h1 {
 
 .resource-links li + li {
   margin-top: 0.5rem;
+}
+
+.reference-list {
+  max-width: 56rem;
+  padding-left: 1.25rem;
+  overflow-wrap: anywhere;
+}
+
+.reference-list li + li {
+  margin-top: 0.75rem;
+}
+
+.media-placeholder,
+.notice {
+  max-width: 44rem;
+  border-left: 3px solid #0b4715;
+  background: #eef4eb;
+  padding: 1.25rem;
+}
+
+.notice > h2 {
+  margin-top: 0;
 }
 
 .action-link {

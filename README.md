@@ -18,6 +18,10 @@ The static website lives in `docs/` and is published with GitHub Pages:
   assessment worksheets. Both language versions link to the same files.
 - `docs/assets/index.html` and `docs/assets/ja/index.html`: Reusable resource
   directories for materials that are not tied to a specific event.
+- `docs/learn-shopify-with-pse/`: English and Japanese indexes and detail pages
+  for the Learn Shopify with PSE webinar archive.
+- `docs/learn-shopify-with-pse/data.js`: Session metadata, notes and external
+  reference links shared by both languages.
 - `docs/_common/styles.css`: Shared styles for both languages.
 
 Store shared website files in `docs/_common/`. Reserve `docs/assets/` for reusable
