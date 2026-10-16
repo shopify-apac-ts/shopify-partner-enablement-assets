@@ -9,7 +9,6 @@
   const labels = lang === "ja" ? {
     eyebrow: "月例技術ウェビナー",
     seriesTitle: "Learn Shopify with PSE",
-    seriesIntro: "Shopifyパートナー向けの月例技術ウェビナーです。2026年に開催した各回の概要と、セッションで紹介した資料・参考リンクを掲載しています。録画はWistiaへの移行後に順次追加します。",
     archiveTitle: "2026年アーカイブ",
     online: "オンライン開催",
     session: "セッション",
@@ -27,7 +26,6 @@
   } : {
     eyebrow: "Monthly technical webinar",
     seriesTitle: "Learn Shopify with PSE",
-    seriesIntro: "A monthly technical webinar for Shopify partners. This archive includes summaries and reference links from each 2026 session. Recordings will be added after migration to Wistia.",
     archiveTitle: "2026 archive",
     online: "Online",
     session: "Session",
@@ -62,8 +60,7 @@
   function renderIndex() {
     main.append(
       element("p", "eyebrow", labels.eyebrow),
-      element("h1", "page-title", labels.seriesTitle),
-      element("p", "introduction", labels.seriesIntro)
+      element("h1", "page-title", labels.seriesTitle)
     );
 
     const section = element("section", "content-section");
