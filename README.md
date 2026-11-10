@@ -16,6 +16,8 @@ The static website lives in `docs/` and is published with GitHub Pages:
   `docs/seminars/<seminar>/ja/index.html`: Seminar summaries and resource links.
 - `docs/seminars/<seminar>/`: Shared seminar files, including slide PDFs and
   assessment worksheets. Both language versions link to the same files.
+- `docs/partner-sales-enablement/`: English and Japanese indexes, detail pages
+  and shared session files for the Partner Sales Enablement webinar archive.
 - `docs/assets/index.html` and `docs/assets/ja/index.html`: Reusable resource
   directories for materials that are not tied to a specific event.
 - `docs/learn-shopify-with-pse/`: English and Japanese indexes and detail pages
