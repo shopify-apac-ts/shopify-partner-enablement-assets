@@ -9,6 +9,10 @@ window.learnShopifyEvents = [
       en: "A review of recent authentication, theme login, inventory and developer tooling updates, followed by the key announcements from Shopify Editions Winter ’26.",
       ja: "認証、テーマログイン、在庫、開発ツールの最新情報と、Shopify Editions Winter ’26の主要アップデートを振り返ります。"
     },
+    recording: {
+      url: "https://shopify-2.wistia.com/s/rulygacia94kphc",
+      embedUrl: "https://fast.wistia.net/embed/iframe/86h21dgg5e"
+    },
     files: ["Japanese Shopify Editions Winter ’26 presentation"],
     references: [
       "https://shopify.dev/docs/apps/build/authentication-authorization",
@@ -32,6 +36,10 @@ window.learnShopifyEvents = [
     summary: {
       en: "A technical deep dive into Universal Commerce Protocol, agent authentication, catalog and checkout capabilities, MCP clients and Shopify developer tooling.",
       ja: "Universal Commerce Protocol（UCP）、エージェント認証、カタログとチェックアウト、MCPクライアント、Shopify開発ツールを技術的に掘り下げます。"
+    },
+    recording: {
+      url: "https://shopify-2.wistia.com/s/xkw44gcxhfqm3ab",
+      embedUrl: "https://fast.wistia.net/embed/iframe/dokfn4is2z"
     },
     files: ["Agentic Commerce Protocols", "UCP & MCP Architecture Deep Dive [JA]"],
     references: [
@@ -57,6 +65,10 @@ window.learnShopifyEvents = [
     summary: {
       en: "Guidance for moving from legacy customer accounts to the new customer account experience, including theme and headless login patterns and an OIDC SSO implementation.",
       ja: "従来のお客様アカウントから新しいお客様アカウントへの移行、テーマ・ヘッドレスでのログイン、OIDC SSO実装を解説します。"
+    },
+    recording: {
+      url: "https://shopify-2.wistia.com/s/i2u2v27274vtgxn",
+      embedUrl: "https://fast.wistia.net/embed/iframe/vobgy1z29s"
     },
     files: [
       "Session presentation",
@@ -89,6 +101,10 @@ window.learnShopifyEvents = [
     summary: {
       en: "A follow-up on new customer account migration and rollout, with Sidekick development, Customer Account APIs and UI extensions, session tokens and OIDC architecture.",
       ja: "新しいお客様アカウントへの移行とロールアウトの続編として、Sidekick開発、Customer Account APIとUI拡張、セッショントークン、OIDC構成を扱います。"
+    },
+    recording: {
+      url: "https://shopify-2.wistia.com/s/zz7c4cubr3pml8h",
+      embedUrl: "https://fast.wistia.net/embed/iframe/f73mmq13gj"
     },
     files: ["Session presentation", "Sidekick version-history screenshot"],
     notes: {
@@ -127,6 +143,10 @@ window.learnShopifyEvents = [
       en: "Recent agentic storefront and analytics updates, Shopify’s AI toolkit, Sidekick app actions and practical OIDC SSO guidance.",
       ja: "エージェント型ストアフロントと分析の最新情報、Shopify AI Toolkit、Sidekickアプリアクション、OIDC SSO実装のポイントを紹介します。"
     },
+    recording: {
+      url: "https://shopify-2.wistia.com/s/xu0qgsfzf3dzzyz",
+      embedUrl: "https://fast.wistia.net/embed/iframe/tdzanjqaq9"
+    },
     files: ["Shopify customer account SSO and OIDC webinar guide [JA]"],
     references: [
       "https://help.shopify.com/ja/manual/online-sales-channels/agentic-storefronts/agentic-home",
@@ -151,6 +171,10 @@ window.learnShopifyEvents = [
       en: "Implementation examples for themes and apps, covering generated test data, app proxies, offline tokens, checkout UI, multiple shipping destinations and Polaris components.",
       ja: "生成テストデータ、アプリプロキシ、オフライントークン、Checkout UI、複数配送先、Polarisコンポーネントを使ったテーマ・アプリ実装例を紹介します。"
     },
+    recording: {
+      url: "https://shopify-2.wistia.com/s/19qpmygwmk113k1",
+      embedUrl: "https://fast.wistia.net/embed/iframe/4zhxqhk23y"
+    },
     references: [
       "https://shopify.dev/docs/api/development-stores/generated-test-data?sellingPlanGroupId=1989476630",
       "https://shopify.dev/docs/apps/build/online-store/app-proxies",
@@ -172,6 +196,10 @@ window.learnShopifyEvents = [
     summary: {
       en: "A guided recap of Shopify Editions Spring ’26 across commerce, payments, Shop, international selling, fulfillment, analytics, AI tools, retail and agentic commerce.",
       ja: "Shopify Editions Spring ’26の発表を、コマース、決済、Shop、越境販売、フルフィルメント、分析、AI、リテール、エージェントコマースの観点から振り返ります。"
+    },
+    recording: {
+      url: "https://shopify-2.wistia.com/s/l0laxg7vtvrp6qe",
+      embedUrl: "https://fast.wistia.net/embed/iframe/qgz1ky6dw3"
     },
     references: [
       "https://www.shopify.com/jp/editions/spring2026",
@@ -215,6 +243,10 @@ window.learnShopifyEvents = [
       en: "Recent ecosystem and AI updates with implementation guidance for WebMCP, Shopify App Home and sample Shopify applications.",
       ja: "エコシステムとAIの最新動向を踏まえ、WebMCP、Shopify App Home、Shopifyアプリのサンプル実装を解説します。"
     },
+    recording: {
+      url: "https://shopify-2.wistia.com/s/193uamrlkyq34qd",
+      embedUrl: "https://fast.wistia.net/embed/iframe/2whjr7hbfu"
+    },
     notes: {
       en: ["Correction: Cloudflare WebMCP and Shopify WebMCP are separate implementations. In Chrome, enable “WebMCP for testing” from chrome://flags/#enable-webmcp-testing to test Shopify Liquid themes."],
       ja: ["訂正：CloudflareとShopifyのWebMCPは別の実装です。ChromeでShopifyのLiquidテーマを検証するには、chrome://flags/#enable-webmcp-testingから「WebMCP for testing」を有効にします。"]
@@ -242,6 +274,10 @@ window.learnShopifyEvents = [
     summary: {
       en: "Updates on checkout implementation, POS receipt customization, Shopify Catalog, agentic commerce and the Universal Commerce Protocol.",
       ja: "チェックアウト実装、POSレシートのカスタマイズ、Shopify Catalog、エージェントコマース、Universal Commerce Protocolの最新情報を扱います。"
+    },
+    recording: {
+      url: "https://shopify-2.wistia.com/s/ku3t1hsgt1gh2zg",
+      embedUrl: "https://fast.wistia.net/embed/iframe/1vliv51f7e"
     },
     files: ["Shopify UCP Deep Dive [JA]"],
     references: [
