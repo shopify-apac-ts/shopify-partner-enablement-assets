@@ -14,6 +14,7 @@
     session: "セッション",
     recording: "録画",
     recordingPending: "録画はWistiaへの移行後に追加します。",
+    recordingLink: "Wistiaで録画を見る",
     files: "セッション資料",
     filesPending: "旧アーカイブ内のファイルは移行準備中です。",
     notes: "補足・訂正",
@@ -31,6 +32,7 @@
     session: "Session",
     recording: "Recording",
     recordingPending: "The recording will be added after migration to Wistia.",
+    recordingLink: "Watch the recording on Wistia",
     files: "Session files",
     filesPending: "Files embedded in the legacy archive are being prepared for migration.",
     notes: "Notes and corrections",
@@ -114,7 +116,24 @@
     const recordingHeading = element("h2", "", labels.recording);
     recordingHeading.id = "recording-title";
     recording.setAttribute("aria-labelledby", recordingHeading.id);
-    recording.append(recordingHeading, element("p", "media-placeholder", labels.recordingPending));
+    recording.append(recordingHeading);
+    if (event.recording) {
+      const wrapper = element("div", "video-embed");
+      const frame = document.createElement("iframe");
+      frame.src = event.recording.embedUrl;
+      frame.title = `${labels.recording}: ${title}`;
+      frame.loading = "lazy";
+      frame.setAttribute("allow", "autoplay; fullscreen; picture-in-picture");
+      frame.setAttribute("allowfullscreen", "");
+      wrapper.append(frame);
+      const recordingLink = element("a", "action-link", labels.recordingLink);
+      recordingLink.href = event.recording.url;
+      recordingLink.target = "_blank";
+      recordingLink.rel = "noopener";
+      recording.append(wrapper, recordingLink);
+    } else {
+      recording.append(element("p", "media-placeholder", labels.recordingPending));
+    }
     main.append(recording);
 
     const files = element("section", "content-section");

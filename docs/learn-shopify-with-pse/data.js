@@ -257,5 +257,51 @@ window.learnShopifyEvents = [
       "https://shopify-apac-ts.github.io/shopify-ucp-demo-mcp/docs/ja/",
       "https://shopify.dev/docs/agents/catalog/global-catalog-extension"
     ]
+  },
+  {
+    number: 22,
+    date: "2026-10-15",
+    time: "13:51 JST",
+    slug: "20261015_scripttag_shop_agentic",
+    title: "ScriptTag migration, Shop and agentic commerce",
+    summary: {
+      en: "Guidance for migrating from ScriptTag to web pixels and checkout extensions, followed by an overview of Shop, Shop Pay, Shop Minis, Shop Pay on external platforms and agentic commerce with Shop MCP and shop.md.",
+      ja: "ScriptTag廃止に向けたWeb Pixel・チェックアウト拡張への移行と、Shop、Shop Pay、Shop Minis、Shopify外でのShop Pay、Shop MCPとshop.mdを活用したエージェントコマースを解説します。"
+    },
+    recording: {
+      url: "https://shopify-2.wistia.com/s/g7rfmwtxdbjy0z2",
+      embedUrl: "https://fast.wistia.net/embed/iframe/ujgbyf9yyf"
+    },
+    references: [
+      "https://shopify.dev/changelog/posts/online-store-script-tags-deprecation",
+      "https://shopify.dev/docs/apps/build/online-store/script-tag-deprecation/storefront",
+      "https://shopify.dev/docs/apps/build/online-store/script-tag-deprecation/order-status",
+      "https://shopify.dev/docs/api/web-pixels-api",
+      "https://shopify.dev/docs/apps/build/checkout/thank-you-order-status",
+      "https://shopify-apac-ts.github.io/shopify-partner-enablement-assets/",
+      "https://shopify-apac-ts.github.io/shopify-technical-docs/",
+      "https://shopify-apac-ts.github.io/shopify-technical-docs/products/shop/",
+      "https://shopify.dev/docs",
+      "https://www.shopify.com/checkout",
+      "https://www.shopify.com/shop",
+      "https://help.shopify.com/en/manual/online-sales-channels/shop",
+      "https://help.shopify.com/en/manual/online-sales-channels/shop/customer-experience",
+      "https://help.shopify.com/en/manual/online-sales-channels/shop/manage-shop-store/products-and-collections",
+      "https://help.shopify.com/en/manual/online-sales-channels/shop/eligibility/requirements",
+      "https://help.shopify.com/en/manual/online-sales-channels/shop/marketing/posts",
+      "https://help.shopify.com/en/manual/online-sales-channels/shop/shop-campaigns",
+      "https://help.shopify.com/en/manual/online-sales-channels/shop/product-reviews",
+      "https://help.shopify.com/en/manual/fulfillment/setup/shop-promise/activate",
+      "https://help.shopify.com/en/manual/online-sales-channels/shop/setup",
+      "https://help.shopify.com/en/manual/online-sales-channels/shop/marketing/settings",
+      "https://help.shop.app/en/shop/shopping/discover/shop-minis",
+      "https://shopify.dev/docs/api/shop-minis",
+      "https://help.shopify.com/en/manual/payments/shop-pay/shop-pay-on-any-platform",
+      "https://shopify.dev/docs/api/commerce-components/pay",
+      "https://shop.md/",
+      "https://shopify.dev/changelog/posts/add-shopping-and-shop-pay-checkout-to-any-agent-with-shop-mcp",
+      "https://shop.dev/",
+      "https://shopify-apac-ts.github.io/shopify-ucp-demo-mcp/docs/"
+    ]
   }
 ];
