@@ -9,7 +9,7 @@
   const labels = lang === "ja" ? {
     eyebrow: "月例技術ウェビナー",
     seriesTitle: "Learn Shopify with PSE",
-    archiveTitle: "2026年アーカイブ",
+    archiveTitle: "アーカイブ",
     online: "オンライン開催",
     session: "セッション",
     recording: "録画",
@@ -22,12 +22,12 @@
     referencesIntro: "セッション内で紹介された外部資料です。リンク先の内容は変更される場合があります。",
     noFiles: "この回には個別のセッション資料は掲載されていません。",
     viewSession: "詳細を見る",
-    back: "2026年アーカイブ",
+    back: "アーカイブ",
     dateLocale: "ja-JP"
   } : {
     eyebrow: "Monthly technical webinar",
     seriesTitle: "Learn Shopify with PSE",
-    archiveTitle: "2026 archive",
+    archiveTitle: "Archive",
     online: "Online",
     session: "Session",
     recording: "Recording",
@@ -40,7 +40,7 @@
     referencesIntro: "External resources introduced during the session. Content at these destinations may change.",
     noFiles: "No separate session files were listed for this event.",
     viewSession: "View session",
-    back: "2026 archive",
+    back: "Archive",
     dateLocale: "en-GB"
   };
 
