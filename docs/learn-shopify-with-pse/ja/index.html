@@ -21,7 +21,19 @@
     </header>
     <main data-learn-shopify-page="index" data-event-base="../">
       <noscript>ウェビナーアーカイブを表示するにはJavaScriptを有効にしてください。</noscript>
+      <section class="content-section" aria-labelledby="monthly-meeting-title" data-index-footer>
+        <h2 id="monthly-meeting-title">定例開催</h2>
+        <p>Learn Shopify with PSEは、毎月第2木曜日の午後2時に開催します。以下のGoogle Meetリンクからご参加ください。</p>
+        <a class="action-link" href="https://meet.google.com/meet/yrq-acan-xxf" target="_blank" rel="noopener">Google Meetから参加する</a>
+      </section>
     </main>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const main = document.querySelector("[data-learn-shopify-page='index']");
+        const footer = document.querySelector("[data-index-footer]");
+        if (main && footer) main.append(footer);
+      });
+    </script>
     <footer class="site-footer">
       <a href="../../ja/">サイトマップ</a>
       <a href="../../ja/#disclaimer-title">免責事項</a>
