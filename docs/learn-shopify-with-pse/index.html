@@ -21,7 +21,19 @@
     </header>
     <main data-learn-shopify-page="index" data-event-base="./">
       <noscript>JavaScript is required to display the webinar archive.</noscript>
+      <section class="content-section" aria-labelledby="monthly-meeting-title" data-index-footer>
+        <h2 id="monthly-meeting-title">Monthly session</h2>
+        <p>Learn Shopify with PSE is held at 2:00 p.m. JST on the second Thursday of every month. Join using the Google Meet link below.</p>
+        <a class="action-link" href="https://meet.google.com/meet/yrq-acan-xxf" target="_blank" rel="noopener">Join on Google Meet</a>
+      </section>
     </main>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const main = document.querySelector("[data-learn-shopify-page='index']");
+        const footer = document.querySelector("[data-index-footer]");
+        if (main && footer) main.append(footer);
+      });
+    </script>
     <footer class="site-footer">
       <a href="../">Site directory</a>
       <a href="../#disclaimer-title">Disclaimer</a>
