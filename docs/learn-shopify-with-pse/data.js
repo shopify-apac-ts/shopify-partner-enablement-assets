@@ -339,5 +339,74 @@ window.learnShopifyEvents = [
       "https://shop.dev/",
       "https://shopify-apac-ts.github.io/shopify-ucp-demo-mcp/docs/"
     ]
+  },
+  {
+    number: 23,
+    date: "2026-11-12",
+    time: "13:51 JST",
+    slug: "20261112_agentic_commerce_app_security",
+    title: "Agentic commerce and app security updates",
+    summary: {
+      en: "Updates on agentic commerce, Shop eligibility and Shopify Catalog, followed by required app security work for IP allowlists, expiring offline tokens, network access declarations, identity verification and App Store submissions.",
+      ja: "エージェンティックコマース、Shopの掲載資格、Shopify Catalogの最新情報に加え、IP許可リスト、有効期限付きオフライントークン、ネットワークアクセス宣言、本人確認、App Store申請に関するアプリセキュリティ対応を解説します。"
+    },
+    recording: {
+      url: "https://shopify-2.wistia.com/s/bsgnjeq59v7lgsz",
+      embedUrl: "https://fast.wistia.net/embed/iframe/r7rvdxbqje"
+    },
+    notes: {
+      en: [
+        "Stores that meet Shop eligibility requirements can now appear on Shop even when they do not use Shopify Payments. Shopify Payments is still required for Shop Campaigns.",
+        "Shop, Shopify Catalog and individual agentic storefronts have different visibility controls. Review the linked product-status and channel guidance before opting out or hiding a product.",
+        "Shopify Partner identity verification applies when submitting new collaborator requests and accessing Catalog API keys. Existing approved collaborations are not affected.",
+        "Review every public and applicable custom app for IP allowlists, expiring offline access tokens and declared network access, and run Shopify AI Toolkit's security check before release."
+      ],
+      ja: [
+        "Shopの掲載資格を満たすストアは、Shopify Paymentsを利用していなくてもShopに表示されるようになりました。Shop Campaignsには引き続きShopify Paymentsが必要です。",
+        "Shop、Shopify Catalog、各エージェンティックストアフロントでは表示制御の仕組みが異なります。オプトアウトや商品の非表示を行う前に、リンク先の商品ステータスと各チャネルのガイドを確認してください。",
+        "Shopifyパートナーの本人確認は、新しいコラボレーター申請の送信とCatalog APIキーへのアクセス時に必要です。すでに承認済みのコラボレーションには適用されません。",
+        "パブリックアプリおよび対象となるカスタムアプリについて、IP許可リスト、有効期限付きオフライントークン、ネットワークアクセス宣言を確認し、リリース前にShopify AI Toolkitのセキュリティチェックを実行してください。"
+      ]
+    },
+    references: [
+      "https://help.shopify.com/en/manual/online-sales-channels/agentic-storefronts",
+      "https://help.shopify.com/en/manual/online-sales-channels/agentic-storefronts/agentic-home",
+      "https://help.shopify.com/en/manual/online-sales-channels/agentic-storefronts/meta",
+      "https://help.shopify.com/en/manual/online-sales-channels/agentic-storefronts/chatgpt",
+      "https://help.shopify.com/en/manual/online-sales-channels/agentic-storefronts/products",
+      "https://help.shopify.com/en/manual/online-sales-channels/agentic-storefronts/data-privacy",
+      "https://shopify.dev/changelog/posts/search-brands-that-don-t-sell-on-shopify-in-the-catalog-api-beta",
+      "https://shopify.dev/docs/agents/catalog/global-catalog-extension#catalog-sources",
+      "https://shopify.dev/docs/agents/catalog/global-catalog",
+      "https://changelog.shopify.com/posts/updated-eligibility-requirements-for-shop",
+      "https://help.shopify.com/en/manual/online-sales-channels/shop",
+      "https://help.shopify.com/en/manual/online-sales-channels/shop/eligibility",
+      "https://help.shopify.com/en/manual/online-sales-channels/shop/eligibility/requirements",
+      "https://help.shopify.com/en/manual/online-sales-channels/shop/setup",
+      "https://help.shopify.com/en/manual/products/product-status",
+      "https://help.shopify.com/en/manual/online-sales-channels/shop/manage-shop-store/products-and-collections",
+      "https://shopify.dev/changelog/posts/ip-allowlists-are-now-required-for-public-apps",
+      "https://shopify.dev/changelog/posts/ip-allowlists-are-now-required-for-custom-apps-installed-outside-your-organization",
+      "https://shopify.dev/changelog/posts/app-ip-allowlists-now-support-ip-addresses-and-asns-together",
+      "https://shopify.dev/docs/apps/build/dev-dashboard/ip-allowlist",
+      "https://shopify.dev/docs/apps/build/security/credentials-and-data/restrict-api-access-to-your-ip-addresses",
+      "https://help.shopify.com/en/manual/shopify-flow/reference/actions/send-http-request",
+      "https://help.shopify.com/en/manual/shopify-flow/reference/actions/send-admin-api-request",
+      "https://shopify.dev/changelog/posts/migrate-to-expiring-offline-access-tokens-before-january-2027",
+      "https://shopify.dev/docs/apps/build/authentication-authorization/migrate-to-expiring-offline-access-tokens",
+      "https://shopify.dev/changelog/posts/secure-your-app-with-network-access-hosts-in-shopify-app-toml",
+      "https://shopify.dev/docs/apps/build/security/storefront/declare-network-access",
+      "https://shopify.dev/docs/apps/build/security",
+      "https://shopify.dev/docs/apps/build/security/app-security-checks",
+      "https://shopify.dev/changelog/blog/build-more-secure-apps-with-shopify-s-ai-toolkit-security-check",
+      "https://shopify.dev/changelog/blog/app-security-updates-october-2026",
+      "https://shopify.dev/changelog/posts/shopify-app-store-submission-requirements-build-grow-then-expand",
+      "https://shopify.dev/changelog/posts/identity-verification-for-partners",
+      "https://shopify.dev/changelog/posts/partner-details-on-collaborator-requests",
+      "https://help.shopify.com/en/partners/manage-account/verifying-your-identity",
+      "https://help.shopify.com/en/partners/manage-clients-stores/working-on-client-stores",
+      "https://help.shopify.com/en/manual/your-account/users/security/collaborator-accounts",
+      "https://shopify.dev/docs/apps/build/stores/collaborations"
+    ]
   }
 ];
