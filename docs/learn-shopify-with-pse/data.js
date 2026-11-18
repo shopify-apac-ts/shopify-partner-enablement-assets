@@ -361,7 +361,8 @@ window.learnShopifyEvents = [
         "Shopify Partner identity verification applies when submitting new collaborator requests and accessing Catalog API keys. Existing approved collaborations are not affected.",
         "Review every public and applicable custom app for IP allowlists, expiring offline access tokens and declared network access, and run Shopify AI Toolkit's security check before release.",
         "Correction: network_access = true in a checkout UI extension enables external fetch calls for that extension only. It has no host list, and the server must return Access-Control-Allow-Origin: * because the extension runs in a Web Worker.",
-        "The [network_access] section in shopify.app.toml declares external destinations used across the app; it isn't an enforcement allowlist. allowed_sources contributes to a report-only CSP for monitoring, while allowed_navigation_hosts only suppresses the exit interstitial for listed links."
+        "The [network_access] section in shopify.app.toml declares external destinations used across the app; it isn't an enforcement allowlist. allowed_sources adds a Content-Security-Policy-Report-Only header to storefront responses for browser-console warnings and violation reporting. It doesn't block undeclared requests or display a warning screen to customers.",
+        "allowed_navigation_hosts suppresses the exit interstitial for external links. Shopify, installed apps, the store's domains, popular social and service sites, and domains that the merchant adds under Online Store > Preferences > Trusted domains are considered together: matching any one of them can bypass the interstitial."
       ],
       ja: [
         "Shopの掲載資格を満たすストアは、Shopify Paymentsを利用していなくてもShopに表示されるようになりました。Shop Campaignsには引き続きShopify Paymentsが必要です。",
@@ -369,7 +370,8 @@ window.learnShopifyEvents = [
         "Shopifyパートナーの本人確認は、新しいコラボレーター申請の送信とCatalog APIキーへのアクセス時に必要です。すでに承認済みのコラボレーションには適用されません。",
         "パブリックアプリおよび対象となるカスタムアプリについて、IP許可リスト、有効期限付きオフライントークン、ネットワークアクセス宣言を確認し、リリース前にShopify AI Toolkitのセキュリティチェックを実行してください。",
         "訂正：Checkout UI extensionのnetwork_access = trueは、その拡張機能による外部fetchを許可する設定です。接続先リストはなく、Web Workerからの通信に対してサーバー側でAccess-Control-Allow-Origin: *が必要です。",
-        "shopify.app.tomlの[network_access]は、アプリ全体の外部通信先を宣言する設定で、通信を遮断する許可リストではありません。allowed_sourcesはReport-Only CSPによる監視用、allowed_navigation_hostsは外部リンクの確認画面を省略するために使われます。"
+        "shopify.app.tomlの[network_access]は、アプリ全体の外部通信先を宣言する設定で、通信を遮断する許可リストではありません。allowed_sourcesは、ストアフロントのレスポンスにContent-Security-Policy-Report-Onlyヘッダーを追加し、ブラウザのコンソール警告と違反レポートによって監視する設定です。未宣言の通信をブロックしたり、利用者に警告画面を表示したりはしません。",
+        "allowed_navigation_hostsは、外部リンクの確認画面を省略する設定です。Shopify、インストール済みアプリ、ストアのドメイン、主要なソーシャル／サービスサイト、およびマーチャントが「オンラインストア > 各種設定 > 信頼できるドメイン」に追加したホストが複合的に扱われ、いずれかに該当すれば（OR条件）確認画面が省略されます。"
       ]
     },
     references: [
@@ -401,6 +403,8 @@ window.learnShopifyEvents = [
       "https://shopify.dev/changelog/posts/secure-your-app-with-network-access-hosts-in-shopify-app-toml",
       "https://shopify.dev/docs/apps/build/checkout/capabilities#network-access",
       "https://shopify.dev/docs/apps/build/security/storefront/declare-network-access",
+      "https://help.shopify.com/en/manual/online-store/menus-and-links/leave-store-confirmation",
+      "https://help.shopify.com/ja/manual/online-store/menus-and-links/leave-store-confirmation",
       "https://shopify.dev/docs/apps/build/security",
       "https://shopify.dev/docs/apps/build/security/app-security-checks",
       "https://shopify.dev/changelog/blog/build-more-secure-apps-with-shopify-s-ai-toolkit-security-check",
