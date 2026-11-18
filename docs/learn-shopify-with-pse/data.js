@@ -359,13 +359,17 @@ window.learnShopifyEvents = [
         "Stores that meet Shop eligibility requirements can now appear on Shop even when they do not use Shopify Payments. Shopify Payments is still required for Shop Campaigns.",
         "Shop, Shopify Catalog and individual agentic storefronts have different visibility controls. Review the linked product-status and channel guidance before opting out or hiding a product.",
         "Shopify Partner identity verification applies when submitting new collaborator requests and accessing Catalog API keys. Existing approved collaborations are not affected.",
-        "Review every public and applicable custom app for IP allowlists, expiring offline access tokens and declared network access, and run Shopify AI Toolkit's security check before release."
+        "Review every public and applicable custom app for IP allowlists, expiring offline access tokens and declared network access, and run Shopify AI Toolkit's security check before release.",
+        "Correction: network_access = true in a checkout UI extension enables external fetch calls for that extension only. It has no host list, and the server must return Access-Control-Allow-Origin: * because the extension runs in a Web Worker.",
+        "The [network_access] section in shopify.app.toml declares external destinations used across the app; it isn't an enforcement allowlist. allowed_sources contributes to a report-only CSP for monitoring, while allowed_navigation_hosts only suppresses the exit interstitial for listed links."
       ],
       ja: [
         "Shopの掲載資格を満たすストアは、Shopify Paymentsを利用していなくてもShopに表示されるようになりました。Shop Campaignsには引き続きShopify Paymentsが必要です。",
         "Shop、Shopify Catalog、各エージェンティックストアフロントでは表示制御の仕組みが異なります。オプトアウトや商品の非表示を行う前に、リンク先の商品ステータスと各チャネルのガイドを確認してください。",
         "Shopifyパートナーの本人確認は、新しいコラボレーター申請の送信とCatalog APIキーへのアクセス時に必要です。すでに承認済みのコラボレーションには適用されません。",
-        "パブリックアプリおよび対象となるカスタムアプリについて、IP許可リスト、有効期限付きオフライントークン、ネットワークアクセス宣言を確認し、リリース前にShopify AI Toolkitのセキュリティチェックを実行してください。"
+        "パブリックアプリおよび対象となるカスタムアプリについて、IP許可リスト、有効期限付きオフライントークン、ネットワークアクセス宣言を確認し、リリース前にShopify AI Toolkitのセキュリティチェックを実行してください。",
+        "訂正：Checkout UI extensionのnetwork_access = trueは、その拡張機能による外部fetchを許可する設定です。接続先リストはなく、Web Workerからの通信に対してサーバー側でAccess-Control-Allow-Origin: *が必要です。",
+        "shopify.app.tomlの[network_access]は、アプリ全体の外部通信先を宣言する設定で、通信を遮断する許可リストではありません。allowed_sourcesはReport-Only CSPによる監視用、allowed_navigation_hostsは外部リンクの確認画面を省略するために使われます。"
       ]
     },
     references: [
@@ -395,6 +399,7 @@ window.learnShopifyEvents = [
       "https://shopify.dev/changelog/posts/migrate-to-expiring-offline-access-tokens-before-january-2027",
       "https://shopify.dev/docs/apps/build/authentication-authorization/migrate-to-expiring-offline-access-tokens",
       "https://shopify.dev/changelog/posts/secure-your-app-with-network-access-hosts-in-shopify-app-toml",
+      "https://shopify.dev/docs/apps/build/checkout/capabilities#network-access",
       "https://shopify.dev/docs/apps/build/security/storefront/declare-network-access",
       "https://shopify.dev/docs/apps/build/security",
       "https://shopify.dev/docs/apps/build/security/app-security-checks",
