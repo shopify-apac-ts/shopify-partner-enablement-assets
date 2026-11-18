@@ -157,7 +157,26 @@
       notesHeading.id = "notes-title";
       notes.setAttribute("aria-labelledby", notesHeading.id);
       const notesList = element("ul", "resource-links");
-      event.notes[lang].forEach((note) => notesList.append(element("li", "", note)));
+      event.notes[lang].forEach((note) => {
+        if (typeof note === "string") {
+          notesList.append(element("li", "", note));
+          return;
+        }
+
+        const item = element("li", "", note.text);
+        if (note.links && note.links.length) {
+          item.append(document.createTextNode(lang === "ja" ? " 参考：" : " References: "));
+          note.links.forEach((reference, index) => {
+            if (index) item.append(document.createTextNode(lang === "ja" ? "、" : "; "));
+            const link = element("a", "", reference.label);
+            link.href = reference.url;
+            link.target = "_blank";
+            link.rel = "noopener";
+            item.append(link);
+          });
+        }
+        notesList.append(item);
+      });
       notes.append(notesHeading, notesList);
       main.append(notes);
     }

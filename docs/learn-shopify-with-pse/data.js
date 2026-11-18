@@ -356,22 +356,104 @@ window.learnShopifyEvents = [
     },
     notes: {
       en: [
-        "Stores that meet Shop eligibility requirements can now appear on Shop even when they do not use Shopify Payments. Shopify Payments is still required for Shop Campaigns.",
-        "Shop, Shopify Catalog and individual agentic storefronts have different visibility controls. Review the linked product-status and channel guidance before opting out or hiding a product.",
-        "Shopify Partner identity verification applies when submitting new collaborator requests and accessing Catalog API keys. Existing approved collaborations are not affected.",
-        "Review every public and applicable custom app for IP allowlists, expiring offline access tokens and declared network access, and run Shopify AI Toolkit's security check before release.",
-        "Correction: network_access = true in a checkout UI extension enables external fetch calls for that extension only. It has no host list, and the server must return Access-Control-Allow-Origin: * because the extension runs in a Web Worker.",
-        "The [network_access] section in shopify.app.toml declares external destinations used across the app; it isn't an enforcement allowlist. allowed_sources adds a Content-Security-Policy-Report-Only header to storefront responses for browser-console warnings and violation reporting. It doesn't block undeclared requests or display a warning screen to customers.",
-        "allowed_navigation_hosts suppresses the exit interstitial for external links. Shopify, installed apps, the store's domains, popular social and service sites, and domains that the merchant adds under Online Store > Preferences > Trusted domains are considered together: matching any one of them can bypass the interstitial."
+        {
+          text: "Stores that meet Shop eligibility requirements can now appear on Shop even when they do not use Shopify Payments. Shopify Payments is still required for Shop Campaigns.",
+          links: [
+            { label: "Updated Shop eligibility", url: "https://changelog.shopify.com/posts/updated-eligibility-requirements-for-shop" },
+            { label: "Shop requirements", url: "https://help.shopify.com/en/manual/online-sales-channels/shop/eligibility/requirements" }
+          ]
+        },
+        {
+          text: "Shop, Shopify Catalog and individual agentic storefronts have different visibility controls. Review the linked product-status and channel guidance before opting out or hiding a product.",
+          links: [
+            { label: "Shop product visibility", url: "https://help.shopify.com/en/manual/online-sales-channels/shop/manage-shop-store/products-and-collections" },
+            { label: "Agentic product visibility", url: "https://help.shopify.com/en/manual/online-sales-channels/agentic-storefronts/products" }
+          ]
+        },
+        {
+          text: "Shopify Partner identity verification applies when submitting new collaborator requests and accessing Catalog API keys. Existing approved collaborations are not affected.",
+          links: [
+            { label: "Partner identity verification", url: "https://help.shopify.com/en/partners/manage-account/verifying-your-identity" },
+            { label: "Collaborator accounts", url: "https://help.shopify.com/en/manual/your-account/users/security/collaborator-accounts" }
+          ]
+        },
+        {
+          text: "Review every public and applicable custom app for IP allowlists, expiring offline access tokens and declared network access, and run Shopify AI Toolkit's security check before release.",
+          links: [
+            { label: "IP allowlists", url: "https://shopify.dev/docs/apps/build/dev-dashboard/ip-allowlist" },
+            { label: "Expiring offline access tokens", url: "https://shopify.dev/docs/apps/build/authentication-authorization/migrate-to-expiring-offline-access-tokens" },
+            { label: "App security checks", url: "https://shopify.dev/docs/apps/build/security/app-security-checks" }
+          ]
+        },
+        {
+          text: "Correction: network_access = true in a checkout UI extension enables external fetch calls for that extension only. It has no host list, and the server must return Access-Control-Allow-Origin: * because the extension runs in a Web Worker.",
+          links: [
+            { label: "Checkout extension network access", url: "https://shopify.dev/docs/apps/build/checkout/capabilities#network-access" }
+          ]
+        },
+        {
+          text: "The [network_access] section in shopify.app.toml declares external destinations used across the app; it isn't an enforcement allowlist. allowed_sources adds a Content-Security-Policy-Report-Only header to storefront responses for browser-console warnings and violation reporting. It doesn't block undeclared requests or display a warning screen to customers.",
+          links: [
+            { label: "Declare app network access", url: "https://shopify.dev/docs/apps/build/security/storefront/declare-network-access" }
+          ]
+        },
+        {
+          text: "allowed_navigation_hosts suppresses the exit interstitial for external links. Shopify, installed apps, the store's domains, popular social and service sites, and domains that the merchant adds under Online Store > Preferences > Trusted domains are considered together: matching any one of them can bypass the interstitial. However, Shopify still blocks any host that it identifies as malicious, even if an app lists it.",
+          links: [
+            { label: "App configuration: network_access", url: "https://shopify.dev/docs/apps/build/cli-for-apps/app-configuration#network_access" },
+            { label: "Link protection and trusted domains", url: "https://help.shopify.com/en/manual/online-store/menus-and-links/leave-store-confirmation" }
+          ]
+        }
       ],
       ja: [
-        "Shopの掲載資格を満たすストアは、Shopify Paymentsを利用していなくてもShopに表示されるようになりました。Shop Campaignsには引き続きShopify Paymentsが必要です。",
-        "Shop、Shopify Catalog、各エージェンティックストアフロントでは表示制御の仕組みが異なります。オプトアウトや商品の非表示を行う前に、リンク先の商品ステータスと各チャネルのガイドを確認してください。",
-        "Shopifyパートナーの本人確認は、新しいコラボレーター申請の送信とCatalog APIキーへのアクセス時に必要です。すでに承認済みのコラボレーションには適用されません。",
-        "パブリックアプリおよび対象となるカスタムアプリについて、IP許可リスト、有効期限付きオフライントークン、ネットワークアクセス宣言を確認し、リリース前にShopify AI Toolkitのセキュリティチェックを実行してください。",
-        "訂正：Checkout UI extensionのnetwork_access = trueは、その拡張機能による外部fetchを許可する設定です。接続先リストはなく、Web Workerからの通信に対してサーバー側でAccess-Control-Allow-Origin: *が必要です。",
-        "shopify.app.tomlの[network_access]は、アプリ全体の外部通信先を宣言する設定で、通信を遮断する許可リストではありません。allowed_sourcesは、ストアフロントのレスポンスにContent-Security-Policy-Report-Onlyヘッダーを追加し、ブラウザのコンソール警告と違反レポートによって監視する設定です。未宣言の通信をブロックしたり、利用者に警告画面を表示したりはしません。",
-        "allowed_navigation_hostsは、外部リンクの確認画面を省略する設定です。Shopify、インストール済みアプリ、ストアのドメイン、主要なソーシャル／サービスサイト、およびマーチャントが「オンラインストア > 各種設定 > 信頼できるドメイン」に追加したホストが複合的に扱われ、いずれかに該当すれば（OR条件）確認画面が省略されます。"
+        {
+          text: "Shopの掲載資格を満たすストアは、Shopify Paymentsを利用していなくてもShopに表示されるようになりました。Shop Campaignsには引き続きShopify Paymentsが必要です。",
+          links: [
+            { label: "Shop掲載資格の更新", url: "https://changelog.shopify.com/posts/updated-eligibility-requirements-for-shop" },
+            { label: "Shopの要件", url: "https://help.shopify.com/en/manual/online-sales-channels/shop/eligibility/requirements" }
+          ]
+        },
+        {
+          text: "Shop、Shopify Catalog、各エージェンティックストアフロントでは表示制御の仕組みが異なります。オプトアウトや商品の非表示を行う前に、リンク先の商品ステータスと各チャネルのガイドを確認してください。",
+          links: [
+            { label: "Shopでの商品表示", url: "https://help.shopify.com/en/manual/online-sales-channels/shop/manage-shop-store/products-and-collections" },
+            { label: "エージェンティックチャネルでの商品表示", url: "https://help.shopify.com/en/manual/online-sales-channels/agentic-storefronts/products" }
+          ]
+        },
+        {
+          text: "Shopifyパートナーの本人確認は、新しいコラボレーター申請の送信とCatalog APIキーへのアクセス時に必要です。すでに承認済みのコラボレーションには適用されません。",
+          links: [
+            { label: "パートナーの本人確認", url: "https://help.shopify.com/en/partners/manage-account/verifying-your-identity" },
+            { label: "コラボレーターアカウント", url: "https://help.shopify.com/en/manual/your-account/users/security/collaborator-accounts" }
+          ]
+        },
+        {
+          text: "パブリックアプリおよび対象となるカスタムアプリについて、IP許可リスト、有効期限付きオフライントークン、ネットワークアクセス宣言を確認し、リリース前にShopify AI Toolkitのセキュリティチェックを実行してください。",
+          links: [
+            { label: "IP許可リスト", url: "https://shopify.dev/docs/apps/build/dev-dashboard/ip-allowlist" },
+            { label: "有効期限付きオフライントークン", url: "https://shopify.dev/docs/apps/build/authentication-authorization/migrate-to-expiring-offline-access-tokens" },
+            { label: "アプリのセキュリティチェック", url: "https://shopify.dev/docs/apps/build/security/app-security-checks" }
+          ]
+        },
+        {
+          text: "訂正：Checkout UI extensionのnetwork_access = trueは、その拡張機能による外部fetchを許可する設定です。接続先リストはなく、Web Workerからの通信に対してサーバー側でAccess-Control-Allow-Origin: *が必要です。",
+          links: [
+            { label: "Checkout extensionのネットワークアクセス", url: "https://shopify.dev/docs/apps/build/checkout/capabilities#network-access" }
+          ]
+        },
+        {
+          text: "shopify.app.tomlの[network_access]は、アプリ全体の外部通信先を宣言する設定で、通信を遮断する許可リストではありません。allowed_sourcesは、ストアフロントのレスポンスにContent-Security-Policy-Report-Onlyヘッダーを追加し、ブラウザのコンソール警告と違反レポートによって監視する設定です。未宣言の通信をブロックしたり、利用者に警告画面を表示したりはしません。",
+          links: [
+            { label: "アプリのネットワークアクセス宣言", url: "https://shopify.dev/docs/apps/build/security/storefront/declare-network-access" }
+          ]
+        },
+        {
+          text: "allowed_navigation_hostsは、外部リンクの確認画面を省略する設定です。Shopify、インストール済みアプリ、ストアのドメイン、主要なソーシャル／サービスサイト、およびマーチャントが「オンラインストア > 各種設定 > 信頼できるドメイン」に追加したホストが複合的に扱われ、いずれかに該当すれば（OR条件）確認画面が省略されます。ただし、アプリ側で宣言していても、Shopifyが悪意のあるホストと判定した場合はブロックされます。",
+          links: [
+            { label: "アプリ設定：network_access", url: "https://shopify.dev/docs/apps/build/cli-for-apps/app-configuration#network_access" },
+            { label: "リンクプロテクションと信頼できるドメイン", url: "https://help.shopify.com/ja/manual/online-store/menus-and-links/leave-store-confirmation" }
+          ]
+        }
       ]
     },
     references: [
@@ -403,6 +485,7 @@ window.learnShopifyEvents = [
       "https://shopify.dev/changelog/posts/secure-your-app-with-network-access-hosts-in-shopify-app-toml",
       "https://shopify.dev/docs/apps/build/checkout/capabilities#network-access",
       "https://shopify.dev/docs/apps/build/security/storefront/declare-network-access",
+      "https://shopify.dev/docs/apps/build/cli-for-apps/app-configuration#network_access",
       "https://help.shopify.com/en/manual/online-store/menus-and-links/leave-store-confirmation",
       "https://help.shopify.com/ja/manual/online-store/menus-and-links/leave-store-confirmation",
       "https://shopify.dev/docs/apps/build/security",
