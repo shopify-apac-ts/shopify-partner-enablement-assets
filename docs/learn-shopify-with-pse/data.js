@@ -405,7 +405,7 @@ window.learnShopifyEvents = [
           ]
         },
         {
-          text: "Follow-up: Shopify AI Toolkit supports AI coding tools including Cursor. Its app security checks can also run in a CI/CD pipeline with any CI/CD provider and any coding agent that supports unattended execution. Shopify provides a GitHub Actions and Codex example that can be adapted to other environments.",
+          text: "Status under review: We are confirming whether and to what extent Shopify AI Toolkit can be used in CI/CD environments that incorporate AI coding tools such as Cursor. Although the official documentation covers Cursor support and a CI/CD example for app security checks, support can depend on the specific tool combination and execution environment. This note will be updated after confirmation.",
           links: [
             { label: "Shopify AI Toolkit", url: "https://shopify.dev/docs/api/ai-toolkit" },
             { label: "Run app security checks in CI/CD", url: "https://shopify.dev/docs/apps/build/security/app-security-checks/run-in-ci-cd" }
@@ -462,7 +462,7 @@ window.learnShopifyEvents = [
           ]
         },
         {
-          text: "追加確認：Shopify AI ToolkitはCursorを含むAIコーディングツールに対応しています。また、アプリセキュリティチェックは、無人実行に対応するコーディングエージェントと任意のCI/CDプロバイダーを組み合わせてパイプラインに組み込めます。公式資料にはGitHub ActionsとCodexを使った例があり、他の環境にも応用できます。",
+          text: "確認中：CursorなどのAIコーディングツールを組み込んだCI/CD環境で、Shopify AI Toolkitを利用できるか、およびその適用範囲を現在確認しています。公式資料にはCursor対応とアプリセキュリティチェックのCI/CD実行例がありますが、具体的なツールの組み合わせや実行環境によって利用可否が異なる可能性があります。確認後に更新します。",
           links: [
             { label: "Shopify AI Toolkit", url: "https://shopify.dev/docs/api/ai-toolkit" },
             { label: "CI/CDでアプリセキュリティチェックを実行", url: "https://shopify.dev/docs/apps/build/security/app-security-checks/run-in-ci-cd" }
