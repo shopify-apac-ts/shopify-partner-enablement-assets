@@ -405,8 +405,9 @@ window.learnShopifyEvents = [
           ]
         },
         {
-          text: "Status under review: We are confirming whether and to what extent Shopify AI Toolkit can be used in CI/CD environments that incorporate AI coding tools such as Cursor. Although the official documentation covers Cursor support and a CI/CD example for app security checks, support can depend on the specific tool combination and execution environment. This note will be updated after confirmation.",
+          text: "Confirmed: Shopify AI Toolkit isn't affected by the app IP allowlist requirement described above and can continue to be used as before. The allowlist restricts GraphQL Admin API and REST Admin API requests that use an app's access tokens; the Toolkit and its app security checks remain available in supported AI coding tools and CI/CD workflows.",
           links: [
+            { label: "App IP allowlists", url: "https://shopify.dev/docs/apps/build/dev-dashboard/ip-allowlist" },
             { label: "Shopify AI Toolkit", url: "https://shopify.dev/docs/api/ai-toolkit" },
             { label: "Run app security checks in CI/CD", url: "https://shopify.dev/docs/apps/build/security/app-security-checks/run-in-ci-cd" }
           ]
@@ -462,8 +463,9 @@ window.learnShopifyEvents = [
           ]
         },
         {
-          text: "確認中：CursorなどのAIコーディングツールを組み込んだCI/CD環境で、Shopify AI Toolkitを利用できるか、およびその適用範囲を現在確認しています。公式資料にはCursor対応とアプリセキュリティチェックのCI/CD実行例がありますが、具体的なツールの組み合わせや実行環境によって利用可否が異なる可能性があります。確認後に更新します。",
+          text: "確認結果：Shopify AI Toolkitは、今回説明したアプリのIP許可リスト要件の影響を受けず、従来どおり利用できます。IP許可リストが制限するのは、アプリのアクセストークンを使用するGraphQL Admin API／REST Admin APIリクエストです。Toolkitおよびアプリセキュリティチェックは、対応するAIコーディングツールやCI/CDワークフローでも引き続き利用できます。",
           links: [
+            { label: "アプリのIP許可リスト", url: "https://shopify.dev/docs/apps/build/dev-dashboard/ip-allowlist" },
             { label: "Shopify AI Toolkit", url: "https://shopify.dev/docs/api/ai-toolkit" },
             { label: "CI/CDでアプリセキュリティチェックを実行", url: "https://shopify.dev/docs/apps/build/security/app-security-checks/run-in-ci-cd" }
           ]
