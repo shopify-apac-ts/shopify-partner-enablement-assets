@@ -403,6 +403,13 @@ window.learnShopifyEvents = [
             { label: "App configuration: network_access", url: "https://shopify.dev/docs/apps/build/cli-for-apps/app-configuration#network_access" },
             { label: "Link protection and trusted domains", url: "https://help.shopify.com/en/manual/online-store/menus-and-links/leave-store-confirmation" }
           ]
+        },
+        {
+          text: "Follow-up: Shopify AI Toolkit supports AI coding tools including Cursor. Its app security checks can also run in a CI/CD pipeline with any CI/CD provider and any coding agent that supports unattended execution. Shopify provides a GitHub Actions and Codex example that can be adapted to other environments.",
+          links: [
+            { label: "Shopify AI Toolkit", url: "https://shopify.dev/docs/api/ai-toolkit" },
+            { label: "Run app security checks in CI/CD", url: "https://shopify.dev/docs/apps/build/security/app-security-checks/run-in-ci-cd" }
+          ]
         }
       ],
       ja: [
@@ -453,6 +460,13 @@ window.learnShopifyEvents = [
             { label: "アプリ設定：network_access", url: "https://shopify.dev/docs/apps/build/cli-for-apps/app-configuration#network_access" },
             { label: "リンクプロテクションと信頼できるドメイン", url: "https://help.shopify.com/ja/manual/online-store/menus-and-links/leave-store-confirmation" }
           ]
+        },
+        {
+          text: "追加確認：Shopify AI ToolkitはCursorを含むAIコーディングツールに対応しています。また、アプリセキュリティチェックは、無人実行に対応するコーディングエージェントと任意のCI/CDプロバイダーを組み合わせてパイプラインに組み込めます。公式資料にはGitHub ActionsとCodexを使った例があり、他の環境にも応用できます。",
+          links: [
+            { label: "Shopify AI Toolkit", url: "https://shopify.dev/docs/api/ai-toolkit" },
+            { label: "CI/CDでアプリセキュリティチェックを実行", url: "https://shopify.dev/docs/apps/build/security/app-security-checks/run-in-ci-cd" }
+          ]
         }
       ]
     },
@@ -490,6 +504,8 @@ window.learnShopifyEvents = [
       "https://help.shopify.com/ja/manual/online-store/menus-and-links/leave-store-confirmation",
       "https://shopify.dev/docs/apps/build/security",
       "https://shopify.dev/docs/apps/build/security/app-security-checks",
+      "https://shopify.dev/docs/apps/build/security/app-security-checks/run-in-ci-cd",
+      "https://shopify.dev/docs/api/ai-toolkit",
       "https://shopify.dev/changelog/blog/build-more-secure-apps-with-shopify-s-ai-toolkit-security-check",
       "https://shopify.dev/changelog/blog/app-security-updates-october-2026",
       "https://shopify.dev/changelog/posts/shopify-app-store-submission-requirements-build-grow-then-expand",
